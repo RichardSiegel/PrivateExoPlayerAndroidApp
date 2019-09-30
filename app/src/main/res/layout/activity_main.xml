@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!--
+        <com.google.android.exoplayer2.ui.PlayerView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+        </com.google.android.exoplayer2.ui.PlayerView>
+        -->
+        <com.google.android.exoplayer2.ui.SimpleExoPlayerView
+            android:id="@+id/simpleExoPlayerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </com.google.android.exoplayer2.ui.SimpleExoPlayerView>
+        <androidx.core.widget.ContentLoadingProgressBar
+            android:id="@+id/progressBar"
+            android:visibility="invisible"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </androidx.core.widget.ContentLoadingProgressBar>
+    </FrameLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!-- could include a TextView or something like that-->
+    </ScrollView>
+
+
+</LinearLayout>
